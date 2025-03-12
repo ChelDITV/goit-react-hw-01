@@ -1,0 +1,16 @@
+.friendlist {
+  margin: 0 auto 50px auto;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 0;
+  max-width: 500px;
+}
+
+.friendlist li {
+  list-style: none;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px;
+}

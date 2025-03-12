@@ -1,14 +1,15 @@
-import Profile from "./component/Profile/Profile";
 import "./App.css";
+import Profile from "./components/profile/Profile";
 import userData from "./userData.json";
-import FriendList from "./component/friendList/FriendList";
+import FriendList from "./components/friendList/FriendList";
 import friends from "./friends.json";
-import TransactionHistory from "./component/transactionHistory/TransactionHistory";
+import TransactionHistory from "./components/transactionHistory/TransactionHistory";
 import transactions from "./transactions.json";
+import "normalize.css";
 
 const App = () => {
   return (
-    <>
+    <div className="container">
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -18,7 +19,7 @@ const App = () => {
       />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </>
+    </div>
   );
 };
 
